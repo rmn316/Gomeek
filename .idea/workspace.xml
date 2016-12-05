@@ -40,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontends/gomeeki-app/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -53,8 +53,18 @@
       <file leaf-file-name="parameters.yml.dist" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontends/api/app/config/parameters.yml.dist">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="157">
+              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="217" column="22" lean-forward="false" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -102,7 +112,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/main/main.html" />
         <option value="$PROJECT_DIR$/.dockerignore" />
         <option value="$PROJECT_DIR$/docker/httpd/https-keys" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontends/gomeeki-app/src/app/main/main.html" />
         <option value="$PROJECT_DIR$/frontends/gomeeki-app/src/app/main/main.controller.js" />
@@ -143,6 +152,8 @@
         <option value="$PROJECT_DIR$/frontends/api/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/frontends/gomeeki-app/src/app/main/controllers/main.controller.js" />
         <option value="$PROJECT_DIR$/frontends/gomeeki-app/src/app/main/views/main.html" />
+        <option value="$PROJECT_DIR$/frontends/gomeeki-app/package.json" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
       </list>
     </option>
   </component>
@@ -720,7 +731,7 @@
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="js.eslint.nodeInterpreter" value="project" />
-    <property name="SearchEverywhereHistoryKey" value="package.json&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/package.json&#10;app.php&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/web/app.php&#10;defa&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/src/AppBundle/Controller/DefaultController.php&#10;para&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml&#10;par&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml.dist&#10;main&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/main/views/main.html&#10;parameters.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml.dist&#10;data.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker/mysql/data/data.sql&#10;dev.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/var/logs/dev.log&#10;locat&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/src/AppBundle/Service/LocationService.php&#10;index.sc&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.scss&#10;mod&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.module.js&#10;main.html&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/main/views/main.html&#10;default&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/src/AppBundle/Controller/DefaultController.php&#10;twi&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/vendor/endroid/twitter/src/Twitter.php&#10;docker-comp&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker-compose.yml&#10;parame&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml&#10;config.yml&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/config.yml&#10;composer.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/composer.json&#10;appker&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/AppKernel.php&#10;twitter&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php&#10;v&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker/httpd/templates/vhost.conf&#10;index.html&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/index.html&#10;docker&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/Dockerfile&#10;vhost&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker/httpd/templates/vhost.conf&#10;module.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.module.js&#10;bower&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/bower.json&#10;.config&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.config.js&#10;parameter.y&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml" />
+    <property name="SearchEverywhereHistoryKey" value="docke&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/Dockerfile&#10;parameters.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml.dist&#10;package.json&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/package.json&#10;app.php&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/web/app.php&#10;defa&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/src/AppBundle/Controller/DefaultController.php&#10;para&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml&#10;par&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml.dist&#10;main&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/main/views/main.html&#10;data.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker/mysql/data/data.sql&#10;dev.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/var/logs/dev.log&#10;locat&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/src/AppBundle/Service/LocationService.php&#10;index.sc&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.scss&#10;mod&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.module.js&#10;main.html&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/main/views/main.html&#10;default&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/src/AppBundle/Controller/DefaultController.php&#10;twi&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/vendor/endroid/twitter/src/Twitter.php&#10;docker-comp&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker-compose.yml&#10;parame&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml&#10;config.yml&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/config.yml&#10;composer.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/composer.json&#10;appker&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/AppKernel.php&#10;twitter&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php&#10;v&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker/httpd/templates/vhost.conf&#10;index.html&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/index.html&#10;docker&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/Dockerfile&#10;vhost&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/docker/httpd/templates/vhost.conf&#10;module.&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.module.js&#10;bower&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/bower.json&#10;.config&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/gomeeki-app/src/app/index.config.js&#10;parameter.y&#9;FILE&#9;file:///Users/robneal/Projects/Gomeeki/frontends/api/app/config/parameters.yml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -821,16 +832,16 @@
       <workItem from="1480694271620" duration="3362000" />
       <workItem from="1480705633360" duration="7612000" />
       <workItem from="1480767575779" duration="41163000" />
-      <workItem from="1480851798811" duration="13831000" />
+      <workItem from="1480851798811" duration="14052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67158000" />
+    <option name="totallyTimeSpent" value="67379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1405" height="774" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26118857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -839,7 +850,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -914,13 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="166" column="1" lean-forward="false" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontends/gomeeki-app/src/app/components/map.service.js" />
     <entry file="file://$PROJECT_DIR$/frontends/gomeeki-app/src/app/index.config.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -969,6 +973,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -976,6 +981,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5010">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480812655000" expanded="true" signature="150034:150140" ph="..." />
+            <marker date="1480812655000" expanded="true" signature="150034:150155" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1207,14 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontends/api/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontends/gomeeki-app/src/app/main/controllers/main.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
@@ -1237,6 +1238,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontends/api/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="217" column="22" lean-forward="false" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
           <folding />
         </state>
       </provider>

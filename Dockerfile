@@ -1,6 +1,6 @@
 FROM centos:6.8
 
-MAINTAINER CDT <webdev@cpwonlinesolutions.com>
+MAINTAINER Robert Neal <rmn316@gmail.com>
 
 #####################################
 # Non-Root User:
@@ -154,29 +154,6 @@ RUN if [ ${INSTALL_COMPOSER} = true ]; then \
     mv composer.phar /usr/local/bin/composer \
 ;fi
 
-
-USER $PUSER
-######################################
-## ssh:
-######################################
-#ARG INSTALL_WORKSPACE_SSH=false
-#ENV INSTALL_WORKSPACE_SSH=${INSTALL_WORKSPACE_SSH}
-#COPY ./docker/ssh/templates/id_rsa /tmp/id_rsa
-#COPY ./docker/ssh/templates/id_rsa.pub /tmp/id_rsa.pub
-#COPY ./docker/ssh/templates/stash-known-hosts-key /tmp/known_hosts
-#
-#RUN if [ ${INSTALL_WORKSPACE_SSH} = true ]; then \
-##        yum install -y openssh openssh-server \
-##    rm -f /etc/service/sshd/down && \
-#        mkdir -p /home/${PUSER}/.ssh \
-#        && chmod -R 0700 /home/${PUSER}/.ssh \
-#        && cat /tmp/id_rsa.pub >> /home/${PUSER}/.ssh/id_rsa.pub \
-#        && cat /tmp/id_rsa >> /home/${PUSER}/.ssh/id_rsa \
-#        && cat /tmp/known_hosts >> /home/${PUSER}/.ssh/known_hosts \
-#        && chmod 644 /home/${PUSER}/.ssh/id_rsa.pub /home/${PUSER}/.ssh/known_hosts \
-#        && chmod 400 /home/${PUSER}/.ssh/id_rsa \
-#;fi
-
 USER $PUSER
 
 ######################################
@@ -239,9 +216,6 @@ RUN rm -rf /tmp/* /var/tmp/*
 ##
 ARG WEB_DIR=/var/www/live
 ENV WEB_DIR=${WEB_DIR}
-
-#COPY ./docker/entrypoint.sh /usr/local/bin
-#RUN chmod +x /usr/local/bin/entrypoint.sh
 
 USER root
 
