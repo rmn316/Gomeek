@@ -1,0 +1,41 @@
+parameters:
+  twitter.api.config:
+    oauth_access_token: "%twitter_oauth_key%"
+    oauth_access_token_secret: "%twitter_oauth_secret%"
+    consumer_key: "%twitter_consumer_key%"
+    consumer_secret: "%twitter_consumer_secret%"
+
+services:
+  app_bundle.service.location:
+    class: AppBundle\Service\LocationService
+    arguments:
+      - "@doctrine.orm.entity_manager"
+
+  app_bundle.service.tweet:
+    class: AppBundle\Service\TweetService
+    arguments:
+      - "@doctrine.orm.entity_manager"
+      - "@app_bundle.repository.tweet"
+      - "@app_bundle.service.tweet_api"
+      - "%cache_lifetime%"
+
+  app_bundle.service.tweet_api:
+    class: AppBundle\Service\TweetAPIService
+    arguments:
+      - "@endriod.twitter"
+      - "%search_radius%"
+
+  app_bundle.repository.tweet:
+    class: AppBundle\Repository\TweetRepository
+    factory:
+      - "@doctrine.orm.entity_manager"
+      - getRepository
+    arguments: [AppBundle\Entity\Tweet]
+
+  endriod.twitter:
+    class: Endroid\Twitter\Twitter
+    arguments:
+      - "%twitter_consumer_key%"
+      - "%twitter_consumer_secret%"
+      - "%twitter_oauth_key%"
+      - "%twitter_oauth_secret%"

@@ -1,0 +1,17 @@
+AppBundle\Entity\Location:
+  type: entity
+  table: locations
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    name:
+      type: string
+      length: 16
+    latitude:
+      type: string
+    longitude:
+      type: string
+    created:
+      type: datetime

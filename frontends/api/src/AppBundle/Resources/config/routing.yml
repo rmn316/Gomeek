@@ -1,0 +1,4 @@
+app.default.tweets:
+  path: /tweets
+  defaults: { _controller: AppBundle:Default:index, _format: json}
+  methods: [GET,POST]
