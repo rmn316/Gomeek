@@ -1,28 +1,16 @@
 <div class="row">
-    <ui-gmap-google-map center='map.center' zoom='map.zoom'>
-        <ui-gmap-window show="map.window.show"
-                        coords="map.window.model"
-                        options="map.window.options"
-                        closeClick="map.window.closeClick()"
-                        templateUrl="'infowindow.tpl.html'"
-                        templateParameter="map.window">
-        </ui-gmap-window>
+    <ui-gmap-google-map ng-if="map.center.latitude" center='map.center' zoom='map.zoom'>
         <ui-gmap-marker
                 ng-repeat="marker in markers"
                 coords="marker.coords"
                 idkey="marker.id"
                 events="map.markersEvents"
-                options="{icon:marker.icon,label:marker.title}">
+                options="{icon:marker.icon}">
+            <ui-gmap-window show="map.window.show" coords="map.window.model" closeClick="'map.window.closeClick'">
+                <p>Tweet: {{ marker.title }}<br />When: {{ marker.created|date:"medium" }}</p>
+            </ui-gmap-window>
         </ui-gmap-marker>
     </ui-gmap-google-map>
-    <!--<ng-map style="height:100%" center="[{{ main.geoLocation.latitude }}, {{ main.geoLocation.longitude }}]">-->
-    <!--<marker ng-repeat="tweet in tweets"-->
-    <!--position="[{{ tweet.latitude }}, {{ tweet.longitude }}]"-->
-    <!--title="Tweet: {{ tweet.text }}<br />When: {{ tweet.created|date:'EEEE'}}"-->
-    <!--icon="{{ tweet.user }}"-->
-    <!--&gt;-->
-    <!--</marker>-->
-    <!--</ng-map>-->
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <form name="form" role="form" novalidate ng-submit="main.search()">
@@ -46,4 +34,3 @@
         </div>
     </div>
 </nav>
-{{ main || json }}

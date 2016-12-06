@@ -16,14 +16,12 @@ export class TweetService {
                 tweets.push({
                     id: key,
                     coords: {
-                        // latitude: value.latitude,
-                        // longitude: value.longitude
-                        latitude: value.longitude,
-                        longitude: value.latitude
-
+                        latitude: value.latitude,
+                        longitude: value.longitude
                     },
                     icon: value.user,
-                    title: "Tweet:" + value.text + "<br />When:" + new Date(value.created).toDateString()
+                    title: value.text,
+                    created: new Date(value.created)
                 });
             });
             return tweets;
