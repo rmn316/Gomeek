@@ -50,7 +50,7 @@ export class MainController {
                 this.current = previous.city;
                 // remove from the previousSearch list. as now active search.
                 this.previousSearch = this.previousSearch.filter(function (item) {
-                    return item.city !== previous.city;
+                    return item.city.toLowerCase() !== previous.city.toLowerCase();
                 });
                 this.scope.map.center = {
                     latitude: previous.latitude,
@@ -63,7 +63,7 @@ export class MainController {
             this.scope.map = {};
             this.scope.marker = {};
             this.geoCode.getCoords(this.data.search).then(function(data) {
-                this.previousSearch.unshift(
+                this.previousSearch.push(
                     {city: this.current, latitude: data.map.center.latitude, longitude: data.map.center.longitude}
                 );
                 this.scope.previous = this.previousSearch;
@@ -79,15 +79,15 @@ export class MainController {
 
     history(previousCity, latitude, longitude) {
         // add current city to previous
-        this.previousSearch.unshift({
+        this.previousSearch.push({
             city: this.current,
             latitude: this.scope.map.center.latitude,
             longitude: this.scope.map.center.longitude
         });
         // remove previous from list
         this.previousSearch = this.previousSearch.filter(function (elem) {
-            return elem.city !== previousCity;
-        }.bind(this));
+            return elem.city.toLowerCase() !== previousCity.toLowerCase();
+        });
         // truncate ...
         this.previousSearch.slice(0, 5);
 
