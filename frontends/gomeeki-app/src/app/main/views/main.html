@@ -1,20 +1,34 @@
 <div class="row">
-    <!--<ng-map style="height:100%" center="{{ main.geoLocation.latitude }}, {{ main.geoLocation.longitude }}">-->
-        <!--<marker ng-repeat="tweet in main.tweets"-->
-                <!--position="{{ tweet.latitude }}, {{ tweet.longitude }}"-->
-                <!--title="Tweet: {{ tweet.text }}<br />When: {{ tweet.created|date:'EEEE'}}"-->
-                <!--icon="{{ tweet.user }}"-->
-        <!--&gt;-->
-        <!--</marker>-->
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-window show="map.window.show"
+                        coords="map.window.model"
+                        options="map.window.options"
+                        closeClick="map.window.closeClick()"
+                        templateUrl="'infowindow.tpl.html'"
+                        templateParameter="map.window">
+        </ui-gmap-window>
+        <ui-gmap-marker
+                ng-repeat="marker in markers"
+                coords="marker.coords"
+                idkey="marker.id"
+                events="map.markersEvents"
+                options="{icon:marker.icon,label:marker.title}">
+        </ui-gmap-marker>
+    </ui-gmap-google-map>
+    <!--<ng-map style="height:100%" center="[{{ main.geoLocation.latitude }}, {{ main.geoLocation.longitude }}]">-->
+    <!--<marker ng-repeat="tweet in tweets"-->
+    <!--position="[{{ tweet.latitude }}, {{ tweet.longitude }}]"-->
+    <!--title="Tweet: {{ tweet.text }}<br />When: {{ tweet.created|date:'EEEE'}}"-->
+    <!--icon="{{ tweet.user }}"-->
+    <!--&gt;-->
+    <!--</marker>-->
     <!--</ng-map>-->
-    <map style="height:100%" center="37.7699298, -122.4469157" zoom="11">
-        <marker position="37.769, -122.44"></marker>
-    </map>
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom">
     <form name="form" role="form" novalidate ng-submit="main.search()">
         <div class="col-sm-6">
-            <input name="search" class="form-control" placeholder="City name" autofocus ng-model="main.data.search" autocomplete="off" />
+            <input name="search" class="form-control" placeholder="City name" autofocus ng-model="main.data.search"
+                   autocomplete="off"/>
         </div>
         <div class="col-sm-3">
             <input type="submit" class="btn btn-primary btn-block" value="Search"/>
@@ -24,10 +38,12 @@
         <div uib-dropdown>
             <button uib-dropdown-toggle class="btn btn-block">History</button>
             <ul uib-dropdown-menu class="col-sm-12">
-                <li ng-repeat="item in main.previousSearch">
-                    <button class="btn btn-block btn-default" ng-click="main.history(item.city)">{{ item.city }}</button>
+                <li ng-repeat="item in previous">
+                    <button class="btn btn-block btn-default" ng-click="main.history(item.city)">{{ item.city }}
+                    </button>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+{{ main || json }}

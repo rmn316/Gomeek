@@ -50,8 +50,8 @@ class TweetAPIService
                 $tweets[] = [
                     'text' => $item['text'],
                     'created' => (new \DateTime($item['created_at']))->format('Y-m-d H:i:s'),
-                    'latitude' => $item['coordinates']['coordinates'][0],
-                    'longitude' => $item['coordinates']['coordinates'][1],
+                    'latitude' => $item['coordinates']['coordinates'][1],
+                    'longitude' => $item['coordinates']['coordinates'][0],
                     'user' => $item['user']['profile_image_url']
                 ];
             }

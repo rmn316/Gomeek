@@ -1,5 +1,6 @@
 CREATE DATABASE gomeeki DEFAULT CHARACTER SET utf8;
 
+USE gomeeki;
 CREATE TABLE locations (
   id INTEGER NOT NULL PRIMARY KEY auto_increment,
   name VARCHAR (64) NOT NULL,
