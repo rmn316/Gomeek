@@ -1,5 +1,5 @@
 export class MainController {
-    constructor(GeoCodeService, TweetService, $scope, $log, googleAPI) {
+    constructor(GeoCodeService, TweetService, $scope, $log) {
         "ngInject";
         this.geoCode = GeoCodeService;
         this.tweet = TweetService;
